@@ -1,0 +1,22 @@
+<form name="searchForm" ng-submit="search()" novalidate>
+  <div>
+    <h2><strong>Details of the vehicle being checked</strong></h2>
+    <p>To make an enquiry enter the vehicle registration number (number plate) and the vehicle make.</p>
+
+    <label for="regNum">Registration number</label>
+    <input name="regNum" class="form-control" type="regNum" id="regNum" placeholder="Registration Number"
+           ng-model="regNum">
+  </div>
+  <div>
+    <label for="make">Vehicle make</label>
+    <input name="make" class="form-control" type="make" id="make"
+           placeholder="Make" ng-model="make">
+  </div>
+  <div>
+    <p>To check the vehicle tax rates and date of the latest V5C, please enter the V5C reference number.</p>
+    <label for="v5c">V5C document reference number (optional)</label>
+    <input name="v5c" class="form-control" type="v5c" id="v5c"
+           placeholder="v5c" ng-model="v5c">
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>

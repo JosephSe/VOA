@@ -21,6 +21,37 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
+<nav class="navbar navbar-inverse" id="global-header">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="/#/" title="Go to the GOV.UK homepage" id="logo" class="content">
+          <img
+            src="https://www.assets.vehicleenquiry.service.gov.uk/vehicleenquiry/Assets/Images/gov.uk_logotype_crown.png"
+            width="35" height="31" alt=""> GOV.UK
+        </a>
+      </div>
+      <!-- inside_header -->
+    </div>
+    <div class="header-proposition">
+      <div class="content">
+        <nav id="proposition-menu">
+          <a href="/#/" id="proposition-name">Vehicle enquiry</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</nav>
+<div id="global-header-bar"></div>
+<div class="maincontent">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+                    <span>This is a new service – your <a href="mailto:test@test.com?subject=CodingTtest">
+                      feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+</div>
 <div class="container">
   <div ng-view=""></div>
 </div>
@@ -56,6 +87,9 @@
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/signup.js"></script>
+<script src="scripts/controllers/search.js"></script>
+<script src="scripts/controllers/details.js"></script>
 <!-- endbuild -->
 </body>
 </html>

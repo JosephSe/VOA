@@ -1,0 +1,77 @@
+<div class="regHeader group">
+  <h2><span class="registrationNumberLabel">Registration number: </span><span class="registrationNumber">{{details.regNum}}</span>
+  </h2>
+</div>
+<div class="group">
+  <div class="isValidTax">
+    <h3>✔ Taxed</h3>
+    <p>
+      Tax due: {{details.tax}}</p>
+  </div>
+  <div class="isValidMot">
+    <h3>✔ MOT</h3>
+    <p>
+      Expires: {{details.mot}}</p>
+  </div>
+</div>
+<div class="application-notice info-notice info-notice-bold group">
+  <p>
+    New keepers must get tax before using the vehicle.
+    <br>
+    If you have taxed, made a SORN or had a MOT it can take up to 5 days for these details to be shown above. If you
+    have a valid paper MoT certificate this is proof that the vehicle has been tested.
+  </p>
+</div>
+<div>
+  <div>Vehicle details</div>
+  <ul class="ul-data">
+    <li><span>
+          Vehicle make
+        </span><strong>{{details.make}}</strong></li>
+    <li><span>
+              Date of first registration
+            </span><strong>{{details.dateOfReg}}</strong></li>
+    <li><span>
+            Year of manufacture
+          </span><strong>{{details.mfg}}</strong></li>
+    <li><span>
+          Cylinder capacity (cc)
+        </span><strong>{{details.cc}}cc
+    </strong></li>
+    <li><span>
+          CO₂Emissions
+        </span><strong>{{details.emissions}} g/km
+    </strong></li>
+    <li><span>
+          Fuel type
+        </span><strong>{{details.fuelType}}</strong></li>
+    <li><span>
+          Vehicle status
+        </span><strong>
+      Tax not due
+    </strong></li>
+    <li><span>
+          Vehicle colour
+        </span><strong>{{details.color}}</strong></li>
+    <li><span>
+          Vehicle type approval
+        </span><strong>{{details.typ}}</strong></li>
+    <li><span>
+          Wheelplan
+        </span><strong>{{details.wheelPlan}}</strong></li>
+    <li><span>
+          Revenue weight
+        </span><strong>
+      {{details.weight}}
+    </strong></li>
+  </ul>
+</div>
+
+<div class="application-notice info-notice info-notice-bold group">
+  <p><strong>Calculating the cost of vehicle tax</strong><br>
+    You can use the information above to work out the cost of taxing this vehicle using the
+    <a href="#" rel="external" target="_blank" title="vehicle-tax-rate-tables">vehicle-tax-rate-tables</a> or
+    <a href="#" rel="external" target="_blank" title="rates-of-vehicle-tax-v149">rates-of-vehicle-tax-v149</a>
+    or enter the V5C reference number on the previous page.
+  </p>
+</div>
